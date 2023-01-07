@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="./index.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400;500;600;700&family=Open+Sans:wght@300;400;500;700;800&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+  <title>practise-site</title>
+
+
+
+
+
+</head>
+
+<body>
+  <header>
+
+    <a href="#"><img src="logo.png" alt="">
+    </a>
+
+    <section class="sign-in">
+      <a href="#">Login</a> |
+      <a href="#">Register</a>
+    </section>
+  </header>
+
+
+  <nav class="sticky">
+    <a href="#">Cilt Bakımı</a>
+    <a href="#">Lazer Epilasyon</a>
+    <a href="#">Kalıcı Makyaj</a>
+    <a href="#">Solaryum</a>
+
+  </nav>
+
+
+
+  <main>
+    
+    <div class="w3-content w3-section" style="max-width:500px">
+      <div class="img-container mySlides">
+        <div class="img-desc">
+
+          <h4>
+            CİLT BAKIMI
+          </h4>
+          <p class="img-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet accusantium ab inventore
+            mollitia quas non fugiat eveniet. Temporibus?</p>
+        </div>
+        <img src="cilt-bakımı.jpg" style="width:100%">
+      </div>
+      <div class="img-container mySlides">
+        <div class="img-desc">
+
+          <h4>
+            KALICI MAKYAJ
+          </h4>
+          <p class="img-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet accusantium ab inventore
+            mollitia quas non fugiat eveniet. Temporibus?</p>
+        </div>
+        <img src="kalıcı-makyaj.jpg" style="width:100%">
+      </div>
+      <div class="img-container mySlides">
+        <div class="img-desc">
+
+          <h4>
+            LAZER EPİLASYON
+          </h4>
+          <p class="img-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet accusantium ab inventore
+            mollitia quas non fugiat eveniet. Temporibus?</p>
+        </div>
+        <img src="lazer-epilasyon.jpeg" style="width:100%">
+      </div>
+      <div class="img-container mySlides">
+        <div class="img-desc">
+
+          <h4>
+            SOLARYUM
+          </h4>
+          <p class="img-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet accusantium ab inventore
+            mollitia quas non fugiat eveniet. Temporibus?</p>
+        </div>
+        <img src="solaryum.jpg" style="width:100%">
+      </div>
+     
+
+
+    </div>
+    
+  </main>
+  
+  <section class="slack">
+    <i class="fa-solid fa-shield-heart"></i>
+  </section>
+  <footer class="footer">
+    <h1>Beauty Center</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, rerum.
+    </p>
+  
+   <div>
+    
+      <p>+80939365397593 <span>
+        <i class="fa-solid fa-phone"></i>
+        </span> </p>
+
+   </div> 
+   <div >
+     <a href="e-mail">beauty@example.com
+      <span>
+        <i class="fa-solid fa-envelope"></i>
+      </span>
+     </a>
+   </div>
+  </footer>
+
+  <script>
+    var myIndex = 0;
+    carousel();
+
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      myIndex++;
+      if (myIndex > x.length) { myIndex = 1 }
+      x[myIndex - 1].style.display = "block";
+      setTimeout(carousel, 2000); // Change image every 2 seconds
+    }
+  </script>
+</body>
+
+</html>
+
+
